@@ -12,7 +12,7 @@ end
 def long_planeteer_calls(calls_long)
  if calls_long.detect{|call| call.between?(5,100)}
 return true 
-else false
+else return false
 end
 end
 
