@@ -10,8 +10,10 @@ planeteer_calls.map  {|call| "#{call.capitalize}!"}
 end
 
 def long_planeteer_calls(calls_long)
- calls_long.detect{|call| call.between?(5,100)} > 0
-
+ if calls_long.detect{|call| call.between?(5,100)}
+return true 
+else false
+end
 end
 
 def find_the_cheese# code an argument here
