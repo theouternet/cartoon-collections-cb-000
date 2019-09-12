@@ -16,7 +16,7 @@ end
 end
 
 def find_the_cheese(cheddar_cheese)
-  
+  cheddar_cheese.each do |call|
   
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
