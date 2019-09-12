@@ -10,7 +10,7 @@ planeteer_calls.map  {|call| "#{call.capitalize}!"}
 end
 
 def long_planeteer_calls(calls_long)
- if calls_long.detect{|call| call.between?(5,100)}
+ if calls_long.detect{|call| call > 4} != nil
 return true 
 else return false
 end
